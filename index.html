@@ -1,100 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #444;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      display: inline-block;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background-color: #666;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-    }
-    .project {
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <nav class="container">
+      <h1 class="logo">Your Name</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>Your Name</h1>
-  <p>Web Developer | Designer | Creator</p>
-</header>
+  <section id="hero" class="hero container">
+    <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+    <p>Front-End Developer | Designer | Problem Solver</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <section id="about" class="about container">
+    <h2>About Me</h2>
+    <p>
+      Brief introduction about yourself, your skills, passions, and background.
+    </p>
+  </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello! I’m [Your Name], a passionate developer who enjoys building websites and applications that are simple, functional, and beautiful. I specialize in front-end web development and love bringing ideas to life in the browser.</p>
-</section>
+  <section id="projects" class="projects container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- Repeat for each project -->
+      <div class="project-card">
+        <img src="project1.png" alt="Project 1 Screenshot" />
+        <h3>Project Title</h3>
+        <p>Short description of the project.</p>
+        <a href="https://github.com/username/project1" target="_blank" class="btn-sm">View Code</a>
+      </div>
+      <!-- ... -->
+    </div>
+  </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+  <section id="contact" class="contact container">
+    <h2>Contact</h2>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
 
-  <div class="project">
-    <h3>Project One</h3>
-    <p>A short description of your project. Include what it does, what tech you used, and why you're proud of it.</p>
-    <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub</a>
-  </div>
-
-  <div class="project">
-    <h3>Project Two</h3>
-    <p>Another cool project you worked on. Describe the purpose, tools used, and any challenges you overcame.</p>
-    <a href="https://github.com/yourusername/project-two" target="_blank">View on GitHub</a>
-  </div>
-
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Email: your.email@example.com</p>
-  <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">yourusername</a></p>
-</section>
-
-<footer>
-  <p>&copy; 2025 Your Name</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
