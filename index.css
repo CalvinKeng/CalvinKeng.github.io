@@ -4,6 +4,14 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
 header {
   background-color: #333;
   color: white;
